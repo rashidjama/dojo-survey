@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dojo Survey</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <div class="container border border-dark mt-5 p-5">
+  <h4>Submitted Info</h4>
+  <p class="lead"><span>Name:</span> {{name}}</p>
+  <p class="lead"><span>Dojo Location:</span> {{location}}</p>
+  <p class="lead"><span>Favorite Language:</span> {{language}}</p>
+  <p class="lead"><span>Comments:</span> {{comment}}</p>
+  <p class="lead"><span>Gender:</span> {{gender}}</p>
+  <p class="lead"><span>Experience:</span>{{exp}}</p>
+  <div class="text-right">
+    <button class="btn bg-success"><a class="text-white text-decoration-none" href="/">Go Back</a></button>
+  </div>
+  </div>
+</body>
+</html>
